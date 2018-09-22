@@ -1,0 +1,23 @@
+[INFO  - 2018-08-18T12:54:21.135Z] GhostDriver - Main - running on port 55965
+[INFO  - 2018-08-18T12:54:21.255Z] Session [d3632220-a2e5-11e8-822e-89e4d7b8c1b8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-08-18T12:54:21.255Z] Session [d3632220-a2e5-11e8-822e-89e4d7b8c1b8] - page.customHeaders:  - {}
+[INFO  - 2018-08-18T12:54:21.256Z] Session [d3632220-a2e5-11e8-822e-89e4d7b8c1b8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-08-18T12:54:21.256Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d3632220-a2e5-11e8-822e-89e4d7b8c1b8
+[INFO  - 2018-08-18T12:59:21.169Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2018-08-18T13:04:21.183Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2018-08-18T13:09:21.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2018-08-18T13:14:21.220Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2018-08-18T13:19:11.271Z] Session [d3632220-a2e5-11e8-822e-89e4d7b8c1b8] - page.onError - msg: TypeError: null is not an object (evaluating 'a.firstChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-08-18T13:19:11.272Z] Session [d3632220-a2e5-11e8-822e-89e4d7b8c1b8] - page.onError - stack:
+  cg (https://maps.googleapis.com/maps/api/js?key=AIzaSyAk2eTPivjAiGHxMU_aJlzxNr-_QZyXI8Q&signed_in=true&libraries=places:84)
+  gg (https://maps.googleapis.com/maps/api/js?key=AIzaSyAk2eTPivjAiGHxMU_aJlzxNr-_QZyXI8Q&signed_in=true&libraries=places:85)
+  initMap (:1)
+  (anonymous function) (:1)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2018-08-18T13:19:21.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2018-08-18T13:24:21.254Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2018-08-18T13:29:21.271Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2018-08-18T13:34:21.281Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

@@ -29,7 +29,7 @@ class Crawler:
         # create lists for urls in queue and visited urls
         self.urls = set([url])
         self.visited = set([url])
-        self.exts = ['htm', 'php']
+        self.exts = ['html','htm', 'php']
         self.allowed_regex = '\.((?!htm)(?!php)\w+)$'
         self.errors = {'404': []}
 
@@ -131,8 +131,12 @@ class Crawler:
             url_str = u'{}\n'
             while self.visited:
                 query = "INSERT INTO gs_sitios_mapas (id, name, sitios_id, url) VALUES (NULL, '', "+ self.id +", '" + url_str.format(self.visited.pop()) + "');"
-                print query
-                cursor.execute(query)
+                #print query
+                try:
+                    cursor.execute(query)
+                    print '[*] >> insert'
+                except (MySQLdb.Error, MySQLdb.Warning) as e:
+                    print '[*] >> not insert'
         except MySQLdb.Error as mysql_error:
             print "Error connecting to database: %s" % (str(mysql_error))
         cursor.close()
